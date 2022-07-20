@@ -5,7 +5,7 @@
 Golang key:value map-based store with set/get/delete functions and error handling.
 
 
-##Example:
+## Example:
 
 ---
 
