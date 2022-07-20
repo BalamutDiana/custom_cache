@@ -1,4 +1,4 @@
-package cache
+package custom_cache
 
 import (
 	"errors"
