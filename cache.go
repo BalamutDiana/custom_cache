@@ -26,7 +26,7 @@ func (c Cache) keyExist(key string) bool {
 func (c Cache) Get(key string) (interface{}, error) {
 	exists := c.keyExist(key)
 	if !exists {
-		return nil, errors.New("записи по ключу " + key + " не найдены")
+		return nil, errors.New("no values for the key " + key + ".")
 	}
 	return c.cache[key], nil
 }
@@ -34,7 +34,7 @@ func (c Cache) Get(key string) (interface{}, error) {
 func (c Cache) Delete(key string) error {
 	exists := c.keyExist(key)
 	if !exists {
-		return errors.New("записи по ключу " + key + " не найдены")
+		return errors.New("no values for the key " + key + ".")
 	}
 	delete(c.cache, key)
 	return nil
